@@ -1,0 +1,138 @@
+.create-event {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.event-form-buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-form-buttons Button {
+    margin: 3vh .5vw;
+}
+
+.title-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-container {
+    position: relative;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.create-misc {
+    display:flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.create-course-id {
+    min-width: 120px;
+    flex-grow: 1;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+.create-train-session {
+    min-width: 170px;
+    flex-grow: 0.5;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+.create-event-type {
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+
+.create-year-level {
+    min-width: 135px;
+    flex-grow: 0.1;
+    padding-bottom: 20px;
+}
+
+.create-title {
+    display:flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.create-event-title {
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+.create-description {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.create-desc {
+    flex-grow: 1;
+}
+
+.create-datetime {
+    display: flex;
+    justify-content: center;
+}
+
+.create-date {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.create-start {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.create-end {
+    flex-grow: 1;
+}
+
+.textfield {
+    margin: 10px;
+    padding: 5px;
+}
+
+.timepicker {
+    margin: 25px;
+    padding: 5px;
+}
+
+/*Changes formatting depending on screen width*/
+@media screen and (max-width:1250px) {
+    .create-misc, .create-title, .create-datetime {
+        flex-direction: column;
+    }
+    .create-course-id, .create-year-level, .create-train-session,
+    .create-event-type, .create-event-title, .create-description,
+    .create-end, .create-start, .create-date {
+        min-width: 100%;
+        max-width: 100%;
+        padding-bottom: 10px;
+        padding-right: 0;
+    }
+
+}
+

@@ -1,0 +1,76 @@
+.copy-modal-container {
+  position: relative;
+  left: 6vw;
+  top: -20vh;
+}
+
+.copyModal {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 1.1s ease-out;
+  box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  overflow: auto;
+  z-index: 100;
+  pointer-events: auto;
+}
+.copyModal.off {
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(8px);
+  transform: scale(0.33);
+  box-shadow: 1rem 0 0 rgba(0, 0, 0, 0.2);
+}
+.copyModal .title {
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.copyModal .content {
+  text-align: left;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.copyModal .actions {
+  border-top: 1px solid #ccc;
+  background: #eee;
+  padding: 0.5rem 1rem;
+  overflow: auto;
+}
+
+.editModal .content .date .copy-times{
+  display: flex;
+}
+
+.editModal .content .date .copy-start{
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.editModal .content .date .copy-end{
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.copyModal .actions button {
+  border: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.copyModal .actions .closeButton {
+  float: right;
+}
+
+.copyModal .actions .copyButton {
+  color: #3174ad;
+  float: left;
+}

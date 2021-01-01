@@ -1,0 +1,66 @@
+.filtering-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filtering-items .filter-category {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.filtering-items .filter-category .title-container {
+    display: flex;
+    position: relative;
+    width: 80%;
+    border-bottom: 2px solid rgb(241, 241, 241);
+    margin-bottom: 5%;
+}
+
+.filtering-items .filter-category .title-container p {
+    font-weight: 600;
+    padding: 0;
+}
+
+.filtering-items .event-filter-types {
+    width: 100%;
+}
+
+.filtering-items .event-filter-types :hover{
+    background-color: rgb(241, 241, 241);
+}
+
+.filtering-items .event-filter-types label{
+    /* position: relative;
+    left: 7.5%;
+    width: 100%; */
+    width: 100%;
+    outline: none;
+}
+
+.filtering-items .event-filter-types label .MuiButtonBase-root {
+    padding-left: 28px;
+}
+
+@media screen and (max-width:1200px) {
+    .event-filter-types .MuiTypography-body1 {
+        display: none;
+    } 
+    .filtering-items .event-filter-types label {
+        margin: 0;
+    }
+    .filtering-items .event-filter-types label .MuiButtonBase-root {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+    .filtering-items .filter-category .title-container{
+        text-align: center;
+    }
+    .MuiIconButton-label {
+        width: 100%;
+    }
+}

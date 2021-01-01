@@ -1,0 +1,62 @@
+.create-group {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.title-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group-container {
+    position: relative;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.create-misc {
+    display:flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.create-course-id {
+    min-width: 120px;
+    flex-grow: 0.1;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+.create-group-name {
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+/*Changes formatting depending on screen width*/
+@media screen and (max-width:1250px) {
+    .create-misc, .create-title, .create-datetime {
+        flex-direction: column;
+    }
+    .create-course-id, .create-year-level, .create-train-session,
+    .create-event-type, .create-event-title, .create-description,
+    .create-end, .create-start, .create-date {
+        min-width: 100%;
+        max-width: 100%;
+        padding-bottom: 10px;
+        padding-right: 0;
+    }
+
+}
+

@@ -1,0 +1,131 @@
+.App {
+  flex-grow: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+.App .App-layer1 {
+  position: relative;
+  height: 100%;
+}
+
+.App .App-layer1 .App-wholeview {
+  height: calc(100% - 64px);
+  display: flex;
+  box-sizing: border-box;
+}
+
+.App .calendarFrame {
+  flex-grow: 1;
+  pointer-events: all;
+}
+
+.App .calendarFrame .calendarFrameLayer {
+  background-color: #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  pointer-events: all;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* .App .CalendarPosition .calendarSpinner .spinner-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  margin: 0 auto;
+} */
+
+/* .App .CalendarSize {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+} */
+
+.App .sideInformation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  max-width: 256px;
+  flex-grow: 1;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.App .sideInformation .sideInfoLayer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.App .sideInformation .sideInfoLayer .createEventButton{
+  display: flex;
+  padding: 5px 5px 5px 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .sideInformation .sideInfoLayer .createGroupButton{
+  display: flex;
+  padding: 5px 5px 5px 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Fixes underline of <a> in chrome*/
+a:-webkit-any-link{
+  text-decoration: none;
+}
+
+.App .sideInformation .sideInfoLayer .filter-search-section {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.App .sideInformation .filtering-section {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.rbc-calendar {
+ flex-grow: 1;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+  font-weight: bold;
+}
+
+.rbc-month-view .rbc-row-segment {
+  padding: 0 3px 3px 3px;
+}
+
+.rbc-events-container .rbc-event {
+  border: 0.3px solid lightgray !important;
+}
+
+.rbc-event {
+  border-style: none !important;
+}
+
+.rbc-show-more {
+  text-align: center;
+}

@@ -1,0 +1,206 @@
+.content .groups .groups-list {
+    min-height: 90px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    margin-top : 0;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+
+.content .groups .groups-list .group-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top : 0;
+}
+
+.content .groups .groups-list .group-item button {
+    min-height: 33px;
+    max-height: 33px;
+    text-align: left;
+    font-size: 15px;
+    background-color: #fff;
+    flex-grow: 1;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid grey;
+    font-weight: bold;
+    pointer-events: visible;
+    cursor: pointer;
+}
+
+.content .groups .groups-list .group-item .selected {
+    background-color: #ccc !important;
+}
+
+.content .groups .groups-list .group-item button:hover {
+    background-color: #ccc;
+}
+
+.groups-list .MuiFormControl-marginDense {
+    margin: 0;
+}
+
+.groups-list .edit-b {
+    min-width: 105px;
+    text-align: right;
+}
+
+.groups-list .choose-id {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #eee;
+    border-bottom: 1px solid #000;
+}
+
+.groups-list .choose-instructor {
+    display: flex;
+    align-items: center;
+}
+
+.groups-list .instructor,
+.groups-list .choose-instructor {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #eee;
+    border-bottom: 1px solid #000;
+}
+
+.groups-list .choose-vodcast {
+    display: flex;
+    align-items: center;
+}
+
+.groups-list .vodcast,
+.groups-list .choose-vodcast {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #eee;
+    border-bottom: 1px solid #000;
+}
+
+.groups-list .choose-location {
+    display: flex;
+    align-items: center;
+}
+
+.groups-list .location,
+.groups-list .choose-location {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #eee;
+    border-bottom: 2px solid grey;
+}
+
+.groups-list .no-groups {
+    padding: 3px;
+    font-size: 16px;
+}
+
+/*EDIT GROUPS*/
+.content .groups .groups-list .edit-group-item .edit-group {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 0;
+    margin-top : 0;
+}
+
+.content .groups .groups-list .edit-group-item .edit-group button:first-child {
+    display: flex;
+    align-items: center;
+    min-height: 33px;
+    max-height: 33px;
+    text-align: left;
+    font-size: 15px;
+    background-color: #fff;
+    flex-grow: 1;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid grey;
+    font-weight: bold;
+    pointer-events: visible;
+    cursor: pointer;
+}
+
+.content .groups .groups-list .edit-group-item .selected {
+    background-color: #ccc !important;
+}
+
+.content .groups .groups-list .edit-group-item .edit-group button:hover {
+    background-color: #ccc;
+}
+
+.content .groups .groups-list .edit-group-item .edit-group .delete-group {
+    position: absolute;
+    right: 10px;
+    height: 27px;
+    top: 3px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: rgba(14, 14, 14, 0.158);
+    vertical-align: middle;
+    color: rgb(53, 53, 53);
+}
+
+.content .groups .groups-list .edit-group-item .edit-group .delete-group:hover {
+    background-color: rgba(73, 73, 73, 0.527);
+    color: rgb(219, 33, 33);
+}
+
+.add-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.add-group {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.add-container:hover {
+    background-color: #ccc;
+}
+
+.add-group svg {
+    padding: 0;
+    height: 22px;
+    width: 22px;
+    fill: rgb(44, 141, 117);
+}
+
+.add-group div {
+    padding-left: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color:   rgb(44, 141, 117);
+}
+
+.add-group:hover svg {
+    fill: rgb(26, 85, 75);
+}
+
+.add-group:hover div {
+    color: rgb(26, 85, 75);
+}
+
+@media screen and (max-width:1200px) {
+    .groups-list .edit-b {
+        visibility: collapse;
+    }
+}
