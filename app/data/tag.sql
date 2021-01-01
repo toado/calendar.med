@@ -1,0 +1,16 @@
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('1','angiology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('2','cardiology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('3','critical care medicine','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('4','endocrinology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('5','gastroenterology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('6','geriatrics','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('7','hematology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('8','hepatology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('9','infectious disease','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('10','nephrology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('11','neurology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('12','oncology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('13','pediatrics','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('14','pulmonology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('15','rheumatology','0');
+INSERT INTO cal_tag (tag_id,tag_name,deleted) VALUES ('16','sports medicine','0');

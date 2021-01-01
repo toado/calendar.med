@@ -1,0 +1,45 @@
+name: Build & Test Project
+
+on:
+  push:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+    name: Build & Test calendar.med
+    runs-on: ubuntu-18.04
+    defaults:
+      run:
+        working-directory: ./app
+    steps:
+      - uses: actions/checkout@v1
+      - name: Create env file
+        run: |
+          touch .env
+          echo MYSQL_ROOT_PASSWORD=root >> .env
+          echo MYSQL_DATABASE=dev >> .env
+          echo MYSQL_USER=${{ secrets.DATABASE_USER }} >> .env
+          echo MYSQL_PORT=3306 >> .env
+          echo MYSQL_PASSWORD=${{ secrets.DATABASE_PASSWORD }} >> .env
+      - name: Build the stack using Docker
+        run: docker-compose up --build -d
+      - name: Python Style Checker
+        run: docker-compose run backend pycodestyle .
+      - name: Run front-end React tests
+        run: docker-compose run frontend yarn test
+      - name: Add Django test user permissions to temp database
+        run: |
+          docker exec db bash -c "mysql -u root -p'${{ secrets.SERVER_MYSQL_PASSWORD }}' -e \"show grants for '${{ secrets.DATABASE_USER }}'; flush privileges; grant ALL PRIVILEGES ON *.* TO '${{ secrets.DATABASE_USER }}'; show grants for '${{ secrets.DATABASE_USER }}';\"; exit;"
+      - name: Run back-end Django tests with coverage
+        run: docker-compose run backend coverage run manage.py test
+
+#     TODO: need codecov token after auth is approved
+#      - name: Upload coverage to Codecov
+#        uses: codecov/codecov-action@v1
+#        with:
+#          token: ${{ secrets.CODECOV_TOKEN }}
+#          name: calendar-med-backend
+#          fail_ci_if_error: true
+#          verbose: true
