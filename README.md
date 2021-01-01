@@ -4,6 +4,7 @@
 ![Build & Test Project](https://github.com/UAlberta-CMPUT401/learning-sciences/workflows/Build%20&%20Test%20Project/badge.svg?branch=master)
 
 http://[2605:fd00:4:1001:f816:3eff:fe83:5737]/
+![admin calendar view](https://puu.sh/H2Y8T/cb4c495c8e.png)
 
 ## Prerequisites 
 
